@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Javascript parte 1</title>
+</head>
+<body>
+    <script>
+        const valor = parseInt (prompt ('Ingrese la distancia en metros:', ''));
+
+        if (valor <= 1000) {
+            document.write ('El medio de transporte adecuado es a pie.');
+        } else if (valor > 1000 && valor <= 10000) {
+            document.write ('El medio de transporte adecuado es en bicicleta');
+        } else if (valor > 10000 && valor <=30000) {
+            document.write ('El medio de transporte adecuado es en colectivo');
+        } else if (valor > 30000 && valor <= 100000) {
+            document.write ('El medio de transporte adecuado es en auto');
+        } else if (valor > 100000) {
+            document.write ('El medio de transporte adecuado es en avión');
+        }
+    </script>
+</body>
+</html>
